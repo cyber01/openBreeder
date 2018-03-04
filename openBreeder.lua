@@ -651,6 +651,7 @@ end
 
 function achieve(spec)
 	while true do
+		removeUnnatural()
 		if isStrong(spec) then
 			break
 		else
