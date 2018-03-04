@@ -8,8 +8,8 @@ local event = require("event")
 local gpu = component.gpu
 local serialization = require("serialization")
 local unicode = require("unicode")
-local chat = component.chat_box
-chat.setName("§fL§7")
+--local chat = component.chat_box
+--chat.setName("§fL§7")
 
 -- getItems - ident, getAvailableItems - fingerprint(nbt)
 
@@ -33,7 +33,7 @@ local apiary = {
 	[1] = component.proxy("70b9944d-837c-462f-a438-965ec9a5ede9"),
 }
 
-function say(text) component.chat_box.say("§bBee Master§7: " .. text) end
+--function say(text) component.chat_box.say("§bBee Master§7: " .. text) end
 
 function isBee(table) if table.individual then return true else return false end end
 function isNatural(table) if table.individual.isNatural == true then return true else return false end end
